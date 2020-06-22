@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FI Records Studio Survey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">French Ice Records Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve our servives
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+                   type="text"
+                   name="name"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your name"
+                   required
+                   />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+                   type="email"
+                   name="email"
+                   id="email"
+                   class="form-control"
+                   placeholder="Enter your Email"
+                   required
+                   />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Phone<span classs="clue">(optional)</span></label>
+            <input
+                   type="number"
+                   name="enter-number"
+                   id="number"
+                   min="1000000000"
+                   max="9999999999"
+                   class="form-control"
+                   placeholder="Enter number"
+                   />
+          </div>
+          <div class="form-group">
+            <p>Which option best describes you current role?</p>
+            <select id="dropdown" name"role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="artist">Artist</option>
+              <option value="engineer">Engineer</option>
+              <option value="producer">Producer</option>
+              <option value="a&r">A&R</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <p>Would you recommend French Ice Records to a friend?<p>
+            <label>
+              <input
+                     name="user-recommend"
+                     value="definitely"
+                     type="radio"
+                     class="input-radio"
+                     checked
+                     />Definitely
+            </label>
+            <label>
+              <input
+                     name="user-recommend"
+                     value="definitely"
+                     type="radio"
+                     class="input-radio"
+                     checked
+                     />Maybe
+            </label>
+            <label>
+               <input
+                     name="user-recommend"
+                     value="definitely"
+                     type="radio"
+                     class="input-radio"
+                     checked
+                     />Not sure
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <p>
+              Which one of our studios did you use?
+            </p>
+             <select id="Studio-used" name="StudioUsed" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="studio A">Studio A</option>
+              <option value="studio B">Studio B</option>
+              <option value="studio C">Studio C</option>
+              <option value="Iso-booth">Iso-booth</option>
+              <option value="Iso-booth">Listening Room</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+             <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label>
+              <input
+                name="prefer"
+                value="plugins"
+                type="checkbox"
+                class="input-checkbox"
+              />Plugins
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="outboard-gear"
+                type="checkbox"
+                class="input-checkbox"
+              />Outboard gear
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="microphones"
+                type="checkbox"
+                class="input-checkbox"
+              />Microphones
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="studio-instruments"
+                type="checkbox"
+                class="input-checkbox"
+              />Studio instruments
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="drinks-snacks"
+                type="checkbox"
+                class="input-checkbox"
+              />Drinks/Snacks
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="air-refresher"
+                type="checkbox"
+                class="input-checkbox"
+              />Air refresher
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="lighting"
+                type="checkbox"
+                class="input-checkbox"
+              />Lighting
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="additional-studio-time"
+                type="checkbox"
+                class="input-checkbox"
+              />Additional studio time
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</html>
